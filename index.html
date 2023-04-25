@@ -9,6 +9,8 @@
         <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" />
         <link href="style.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.4.2/dist/alpine.js"></script>
+
         <script>
             tailwind.config = {
               theme: {
@@ -140,6 +142,59 @@ button.addEventListener('click', () => {
     <img src="../img/wireframe2.PNG" alt="Image description" class="w-full h-auto">
   </div>
 </div>
+
+
+<script>
+  function toggleAccordion(id) {
+    var accordion = document.getElementById(id);
+    accordion.classList.toggle("hidden");
+  }
+</script>
+<div class="max-w-md mx-auto ml-auto">
+  <div class="border rounded-lg overflow-hidden">
+    <!-- First item -->
+    <div class="border-b">
+      <button class="w-full p-4 text-left bg-blue-500 text-white focus:outline-none focus:bg-gray-200 hover:bg-blue-400" onclick="toggleAccordion('accordion1')">
+        <span class="text-lg font-medium">Item 1</span>
+        <span class="ml-2">&#9660;</span>
+      </button>
+      <div id="accordion1" class="p-4 hidden bg-blue-400">
+        <p class="text-gray-700">This is the content for Item 1</p>
+      </div>
+    </div>
+    <!-- Second item -->
+    <div class="border-b">
+      <button class="w-full p-4 text-left bg-blue-500 text-white focus:outline-none focus:bg-gray-200 hover:bg-blue-400" onclick="toggleAccordion('accordion2')">
+        <span class="text-lg font-medium">Item 2</span>
+        <span class="ml-2">&#9660;</span>
+      </button>
+      <div id="accordion2" class="p-4 hidden bg-blue-400">
+        <p class="text-gray-700">This is the content for Item 2</p>
+      </div>
+    </div>
+    <!-- Third item -->
+    <div>
+      <button class="w-full p-4 text-left bg-blue-500 text-white focus:outline-none focus:bg-gray-200 hover:bg-blue-400" onclick="toggleAccordion('accordion3')">
+        <span class="text-lg font-medium">Item 3</span>
+        <span class="ml-2">&#9660;</span>
+      </button>
+      <div id="accordion3" class="p-4 hidden bg-blue-400">
+        <p class="text-gray-700">This is the content for Item 3</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  function toggleAccordion(id) {
+    var accordion = document.getElementById(id);
+    accordion.classList.toggle("hidden");
+  }
+</script>
+
+
+
 
 
 
