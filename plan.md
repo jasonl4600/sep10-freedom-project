@@ -10,3 +10,9 @@ Fonts
 Colors (Hex)
 Mvp at least a week before 5/1
 
+Tailwind Colors
+Flex (Grid Column Row)
+Layout Top Right Bottom Left (Adjusting where elements go on the screen)
+Positioning
+Border
+Sizing (Minimum and Max Width and Height)
